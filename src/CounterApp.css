@@ -1,0 +1,89 @@
+/* CounterApp.css */
+
+.counter-container {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px; /* Ensure a minimum height for responsiveness */
+  }
+  
+  .title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+  }
+  
+  .counter {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 24px;
+    color: #333;
+    background-color: #fff; /* Light background for better contrast */
+    border: 1px solid #ddd; /* Subtle border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adjusted shadow for depth */
+    margin-bottom: 20px;
+  }
+  
+  .count {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Spacing between buttons */
+  }
+  
+  .btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff; /* Primary blue */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+  }
+  
+  /* Different colors for buttons */
+  .btn.increment {
+    background-color: #28a745; /* Green for increment */
+  }
+  
+  .btn.decrement {
+    background-color: #dc3545; /* Red for decrement */
+  }
+  
+  .btn.reset {
+    background-color: #ffc107; /* Orange for reset */
+  }
+  
+  /* Cool hover effects (choose one or mix and match) */
+  
+  /* Option 1: Simpler color shift on hover */
+  .btn:hover {
+    background-color: darken(color(), 10%); /* Darken button color on hover */
+  }
+  
+  /* Option 2: Slight button growth on hover */
+  .btn:hover {
+    transform: scale(1.02); /* Slightly grow button on hover */
+  }
+  
+  /* Option 3: Button shadow pulse on hover */
+  .btn:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Pulse shadow on hover */
+  }
+  
+  /* Choose your preferred hover effect by uncommenting the desired section above */
+  
